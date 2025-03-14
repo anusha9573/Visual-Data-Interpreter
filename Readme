@@ -1,0 +1,50 @@
+Visual Data Interpreter System 
+Overview
+The Visual Data Interpreter System is a comprehensive application designed to enhance and analyze images in conjunction with related PDF documents. By integrating advanced image processing techniques with natural language processing models, the system provides detailed, context-aware descriptions of images, leveraging information extracted from accompanying documents.  Features Image Enhancement: Improves image quality using techniques such as histogram equalization and sharpness enhancement. Optical Character Recognition (OCR): Extracts text from images to incorporate textual information into the analysis. PDF Text Extraction: Retrieves and processes text from uploaded PDF documents to provide contextual information. Image Feature Extraction: Utilizes pre-trained deep learning models to extract meaningful features from images. Embeddings Generation: Converts both image features and textual data into embeddings using models like nomic-embed-text. Contextual Retrieval: Employs FAISS vector stores to retrieve relevant document content based on image features. Natural Language Understanding: Generates detailed descriptions of images using advanced language models such as qwen2.5.
+Technologies Used
+Programming Languages: Python
+Libraries:
+torch
+pytesseract
+pdfplumber
+streamlit
+Pillow
+FAISS
+Deep Learning Models:
+ResNet50 for image feature extraction
+nomic-embed-text for embeddings generation
+qwen2.5 for natural language understanding
+
+Architecture
+
+Setup Instructions
+Clone the Repository:
+
+git clone https://github.com/anusha9573/visual-data-interpreter.git
+cd visual-data-interpreter
+Install Dependencies:
+
+Ensure you have Python installed. Then, install the required packages:
+
+]
+pip install -r requirements.txt
+Run the Application:
+
+Launch the Streamlit application:
+
+streamlit run app.py
+Usage:
+
+Access the application through the provided URL.
+Upload an image and its corresponding PDF document.
+Enter any specific questions related to the uploaded files.
+View the generated, context-aware description of the image.
+
+Contributing
+We welcome contributions to enhance the functionality and performance of this system. Please follow these steps:
+
+Fork the repository.
+Create a new branch: git checkout -b feature-name.
+Commit your changes: git commit -m 'Add new feature'.
+Push to the branch: git push origin feature-name.
+Submit a pull request detailing your changes.
